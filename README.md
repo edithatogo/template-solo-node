@@ -1,1 +1,1 @@
-# template-solo-node
+# Node project
