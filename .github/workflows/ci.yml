@@ -5,4 +5,4 @@ permissions:
   id-token: write
 jobs:
   ci:
-    uses: edithatogo/repository-standards/.github/workflows/node-ci.yml@6169e53d0ae27bdbf45ca416c8548f78526463db # main
+    uses: edithatogo/repository-standards/.github/workflows/node-ci.yml@ad67bedaa0c4d0769bd54fd76354bac65b25b88c # main
