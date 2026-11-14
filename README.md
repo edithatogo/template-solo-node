@@ -10,15 +10,26 @@ This repository is designed for one maintainer. Automated checks are required;
 no second reviewer, CODEOWNERS approval, team membership, or mandatory human
 approval is introduced.
 
-## Start here
+## Usage
 
-1. Replace `replace-me` in `package.json`.
-2. Run `npm ci`.
-3. Run `npm test`.
+Choose **Use this template** to create a Node project, then follow the
+[adoption checklist](BOOTSTRAP.md). The initial runnable example is the smoke
+test in `test/smoke.test.js`. The package is marked private and has no
+application entry point until the project supplies one.
+
+1. Replace `replace-me` in `package.json` and update the lockfile with the
+   documented Node/npm toolchain.
+2. Run `npm ci` to install from `package-lock.json`.
+3. Run `npm test` to execute the Node test runner and generate c8 coverage.
 
 ## Development
 
-CI uses the lockfile, runs the Node test runner through c8, and uploads real coverage through Codecov OIDC.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for setup and validation commands, and
+[BOOTSTRAP.md](BOOTSTRAP.md) for the adoption checklist.
+
+The pinned shared CI installs from the lockfile and runs the Node test runner
+through c8. It is configured to upload coverage through Codecov OIDC. Verify
+provider activation and an actual upload in each generated repository.
 
 ## Versioning
 
@@ -30,9 +41,9 @@ A library must not configure global logging. Applications and services should us
 
 ## Security
 
-Report vulnerabilities privately through GitHub Security Advisories. See
-[SECURITY.md](SECURITY.md); do not disclose credentials or sensitive source data
-in a public issue.
+Follow [SECURITY.md](SECURITY.md) for private reporting and the safe contact
+fallback if GitHub's **Report a vulnerability** option is unavailable. Do not
+include credentials, sensitive source data or exploit details in public issues.
 
 ## Citation
 
